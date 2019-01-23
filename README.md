@@ -1,18 +1,18 @@
-# vscode-ipynb-py-convert
+# ipynb-py-convert
 
-[Jupyter plugin for vscode](https://marketplace.visualstudio.com/items?itemName=donjayamanne.jupyter) allows creating a python file with the ability to run cells using `code lens` and `preview` extension apis.
+Atom/Hydrogen or VSCode/Python allows creating a python files split into cells with `# %%` separators with the ability to run cells via backend Jupyter session and interactively show results back.
 
-Lots more [Jupyter python vscode examples](https://github.com/DonJayamanne/pythonVSCode/wiki/Jupyter-Examples)
+More examples: [Jupyter Python VSCode examples](https://github.com/DonJayamanne/pythonVSCode/wiki/Jupyter-Examples), [Atom/Hydrogen Getting Started](https://nteract.gitbooks.io/hydrogen/docs/Usage/GettingStarted.html).
 
-[vscode-ipynb-py-convert](https://pypi.python.org/pypi/vscode-ipynb-py-convert) python module converts ipynb->py and py->ipynb.
+[ipynb-py-convert](https://pypi.python.org/pypi/ipynb-py-convert) python module converts ipynb to py and py to ipynb.
 
 ## Example
 
-`python -m vscode-ipynb-py-convert examples/plot.py examples/plot.ipynb`
+`ipynb-py-convert examples/plot.py examples/plot.ipynb`
 
 or
 
-`python -m vscode-ipynb-py-convert examples/plot.ipynb examples/plot.py`
+`ipynb-py-convert examples/plot.ipynb examples/plot.py`
 
 
 **VSCode**
