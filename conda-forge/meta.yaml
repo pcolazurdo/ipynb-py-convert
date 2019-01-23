@@ -1,5 +1,5 @@
 {% set name = "ipynb-py-convert" %}
-{% set version = "0.4.1" %}
+{% set version = "0.4.2" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 9749d5e5cc5275b62c3e8859e02192f4b734f79d91f57a34cd02eeb09c290254
+  sha256: 2025ef0e0b3ef7f63f60848305a33c232cf64704c65a5e3f15ae33f582f44520
 
 build:
   noarch: python
