@@ -23,4 +23,5 @@ setup(
         'console_scripts': [
             'ipynb-py-convert=ipynb_py_convert.__main__:main',
         ],
+    },
 )
