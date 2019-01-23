@@ -9,6 +9,17 @@ More examples: [Jupyter Python VSCode examples](https://github.com/DonJayamanne/
 **ipynb-py-convert** is a forks of the [vscode-ipynb-py-converter](https://github.com/nojvek/vscode-ipynb-py-converter).
 
 
+## Install
+
+```bash
+conda install -c defaults -c conda-forge ipynb-py-convert
+```
+or
+```bash
+pip install ipynb-py-convert
+```
+
+
 ## Example
 
 `ipynb-py-convert examples/plot.py examples/plot.ipynb`
