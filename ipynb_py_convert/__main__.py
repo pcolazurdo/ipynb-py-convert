@@ -95,8 +95,8 @@ def convert(in_file, out_file):
 def main():
     argv = sys.argv
     if len(argv) < 3:
-        print('Usage: python -m vscode-ipynb-py-convert in.ipynb out.py')
-        print('or:    python -m vscode-ipynb-py-convert in.py out.ipynb')
+        print('Usage: ipynb-py-convert in.ipynb out.py')
+        print('or:    ipynb-py-convert in.py out.ipynb')
         sys.exit(1)
 
     convert(in_file=argv[1], out_file=argv[2])
