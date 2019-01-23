@@ -4,7 +4,7 @@ Atom/Hydrogen or VSCode/Python allows creating a python files split into cells w
 
 More examples: [Jupyter Python VSCode examples](https://github.com/DonJayamanne/pythonVSCode/wiki/Jupyter-Examples), [Atom/Hydrogen Getting Started](https://nteract.gitbooks.io/hydrogen/docs/Usage/GettingStarted.html).
 
-[ipynb-py-convert](https://pypi.python.org/pypi/ipynb-py-convert) python module converts ipynb to py and py to ipynb.
+[ipynb-py-convert](https://pypi.python.org/pypi/ipynb-py-convert) python module converts files: .ipynb to .py and .py to .ipynb.
 
 ## Example
 
