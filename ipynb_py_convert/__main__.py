@@ -92,7 +92,7 @@ def convert(in_file, out_file):
         raise(Exception('Extensions must be .ipynb and .py or vice versa'))
 
 
-if __name__ == '__main__':
+def main():
     argv = sys.argv
     if len(argv) < 3:
         print('Usage: python -m vscode-ipynb-py-convert in.ipynb out.py')
@@ -100,3 +100,7 @@ if __name__ == '__main__':
         sys.exit(1)
 
     convert(in_file=argv[1], out_file=argv[2])
+
+
+if __name__ == '__main__':
+    main()
