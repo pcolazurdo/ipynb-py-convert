@@ -31,11 +31,11 @@ or
 
 **VSCode**
 
-![](examples/vscode.png)
+![](https://github.com/kiwi0fruit/ipynb-py-convert/raw/master/examples/vscode.png)
 
 Markdown cells are converted to python multiline strings `'''`. Code cells are left as is. `# %%` is used by vscode as the cell marker on which 'Run Cell' action is available.
 
 
 **Jupyter ipynb notebook**
 
-![](examples/jupyter.png)
+![](https://github.com/kiwi0fruit/ipynb-py-convert/raw/master/examples/jupyter.png)
