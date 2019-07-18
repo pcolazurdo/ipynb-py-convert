@@ -6,7 +6,7 @@ More examples: [Jupyter Python VSCode examples](https://github.com/DonJayamanne/
 
 [ipynb-py-convert](https://pypi.python.org/pypi/ipynb-py-convert) python module converts files: .ipynb to .py and .py to .ipynb.
 
-**ipynb-py-convert** is a forks of the [vscode-ipynb-py-converter](https://github.com/nojvek/vscode-ipynb-py-converter).
+**ipynb-py-convert** is a fork of the [vscode-ipynb-py-converter](https://github.com/nojvek/vscode-ipynb-py-converter).
 
 
 ## Install
