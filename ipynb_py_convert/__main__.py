@@ -13,7 +13,7 @@ def nb2py(notebook):
         cell_type = cell['cell_type']
 
         if cell_type == 'markdown':
-            result.append("%s'''\n%s\n'''" %
+            result.append('%s"""\n%s\n"""'%
                           (header_comment, ''.join(cell['source'])))
 
         if cell_type == 'code':
@@ -34,6 +34,9 @@ def py2nb(py_str):
         cell_type = 'code'
         if chunk.startswith("'''"):
             chunk = chunk.strip("'\n")
+            cell_type = 'markdown'
+        elif chunk.startswith('"""'):
+            chunk = chunk.strip('"\n')
             cell_type = 'markdown'
 
         cell = {
