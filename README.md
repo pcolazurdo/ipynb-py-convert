@@ -20,6 +20,11 @@ pip install ipynb-py-convert
 ```
 
 
+## Troubleshooting
+
+* If encoding problems try using `python>=3.7`, setting `set PYTHONUTF8=1` and use `ipynb-py-convert` for UTF-8 files only.
+
+
 ## Example
 
 `ipynb-py-convert examples/plot.py examples/plot.ipynb`
