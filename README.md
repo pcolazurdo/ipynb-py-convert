@@ -22,7 +22,7 @@ pip install ipynb-py-convert
 
 ## Troubleshooting
 
-* If encoding problems on Windows try using `python>=3.7`, setting `set PYTHONUTF8=1` in Windows console and use `ipynb-py-convert` for UTF-8 files only. If using Git-Bash on Windows setting:
+* If encoding problems on Windows try using `python>=3.7`, setting `set PYTHONUTF8=1` in Windows console and use `ipynb-py-convert` for UTF-8 files only. If using [Git-Bash on Windows](https://git-scm.com/download/win) setting:
 
 ```bash
 export LANG=C.UTF-8
