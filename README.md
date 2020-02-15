@@ -29,7 +29,7 @@ export LANG=C.UTF-8
 export PYTHONIOENCODING=utf-8
 export PYTHONUTF8=1
 ```
-should be enough.
+should be enough. Also try setting default Bash settings to UTF-8: [Options] - [Text] - [Locale / Character set] - [C / UTF-8]. It might affect all Bash runs so there would be no need to setting encoding every time. 
 
 
 ## Example
