@@ -67,7 +67,7 @@ def py2nb(py_str):
                 'pygments_lexer': 'ipython3',
                 'version': '3.6.1'}},
         'nbformat': 4,
-        'nbformat_minor': 1
+        'nbformat_minor': 4
     }
 
     return notebook
