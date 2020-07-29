@@ -78,17 +78,17 @@ def convert(in_file, out_file):
     _, out_ext = path.splitext(out_file)
 
     if in_ext == '.ipynb' and out_ext == '.py':
-        with open(in_file, 'r') as f:
+        with open(in_file, 'r', encoding='utf-8') as f:
             notebook = json.load(f)
         py_str = nb2py(notebook)
-        with open(out_file, 'w') as f:
+        with open(out_file, 'w', encoding='utf-8') as f:
             f.write(py_str)
 
     elif in_ext == '.py' and out_ext == '.ipynb':
-        with open(in_file, 'r') as f:
+        with open(in_file, 'r', encoding='utf-8') as f:
             py_str = f.read()
         notebook = py2nb(py_str)
-        with open(out_file, 'w') as f:
+        with open(out_file, 'w', encoding='utf-8') as f:
             json.dump(notebook, f, indent=2)
 
     else:
