@@ -28,7 +28,8 @@ def py2nb(py_str):
         py_str = py_str[len(header_comment):]
 
     cells = []
-    chunks = py_str.split('\n\n%s' % header_comment)
+    # chunks = py_str.split('\n\n%s' % header_comment)
+    chunks = py_str.split('\n\n')
 
     for chunk in chunks:
         cell_type = 'code'
