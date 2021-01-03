@@ -1,6 +1,22 @@
 import json
 import sys
 from os import path
+import argparse
+
+
+def parse_arguments():
+    parser = argparse.ArgumentParser()
+    parser.add_argument("inputfile",
+                        help="Input file. Can be a .py or .ipynb source file")
+    parser.add_argument("outputfile",
+                        help="Out file (will overwrite). Can be a .py or .ipynb source file")
+    parser.add_argument("-v", "--verbosity", action="count",
+                        help="increase output verbosity - not in use")
+    parser.add_argument("-d", "--delimiter", default="\n\n\n",
+                        help="Allows you to set a different delimiter where to cut the input file and create a new cell. Default is '\\n\\n\\n' following the flake8 E302 rule")
+    args = parser.parse_args(sys.argv[1:])
+    return (args.verbosity, args.inputfile, args.outputfile, args.delimiter)
+
 
 header_comment = '# %%\n'
 
@@ -29,7 +45,7 @@ def py2nb(py_str):
 
     cells = []
     # chunks = py_str.split('\n\n%s' % header_comment)
-    chunks = py_str.split('\n\n')
+    chunks = py_str.split('\n\n\n')
 
     for chunk in chunks:
         cell_type = 'code'
@@ -97,13 +113,14 @@ def convert(in_file, out_file):
 
 
 def main():
-    argv = sys.argv
-    if len(argv) < 3:
-        print('Usage: ipynb-py-convert in.ipynb out.py')
-        print('or:    ipynb-py-convert in.py out.ipynb')
-        sys.exit(1)
+    print(parse_arguments())
+    # if len(argv) < 3:
+    #     print('Usage: ipynb-py-convert in.ipynb out.py')
+    #     print('or:    ipynb-py-convert in.py out.ipynb')
+    #     sys.exit(1)
+    debug, in_file, out_file, delimiter = parse_arguments()
 
-    convert(in_file=argv[1], out_file=argv[2])
+    convert(in_file=in_file, out_file=out_file)
 
 
 if __name__ == '__main__':
